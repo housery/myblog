@@ -1,6 +1,6 @@
 # myblog-frontend
 
-> myblog frontend A Vue.js project
+> myblog 前台系统
 
 ## Build Setup
 

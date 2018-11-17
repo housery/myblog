@@ -1,4 +1,4 @@
-package com.xiaohoo.myblogbackend;
+package com.xiaohoo.myblog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

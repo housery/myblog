@@ -1,4 +1,4 @@
-package com.xiaohoo.myblogbackend;
+package com.xiaohoo.myblog;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

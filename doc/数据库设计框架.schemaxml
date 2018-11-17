@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="utf8" collation="utf8_general_ci">myblog</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="user" view="colnames">
+<left>10</left>
+<top>20</top>
+<width>114</width>
+<height>163</height>
+<sql_create_table>CREATE TABLE `user` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL COMMENT '用户名',
+  `password` varchar(50) NOT NULL COMMENT '用户密码',
+  `article_id` int(10) DEFAULT NULL COMMENT '文章id',
+  `create_date` datetime NOT NULL COMMENT '用户创建日期',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="article" view="colnames">
+<left>173</left>
+<top>21</top>
+<width>88</width>
+<height>163</height>
+<sql_create_table>CREATE TABLE `article` (
+  `id` int(10) NOT NULL AUTO_INCREMENT COMMENT '文章id',
+  `title` varchar(50) NOT NULL COMMENT '文章标题',
+  `content` text NOT NULL COMMENT '文章内容',
+  `user_id` int(10) NOT NULL COMMENT '文章用户id',
+  `cat_id` int(10) NOT NULL COMMENT '文章分类id',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="categorie" view="colnames">
+<left>332</left>
+<top>42</top>
+<width>98</width>
+<height>112</height>
+<sql_create_table>CREATE TABLE `categorie` (
+  `id` int(10) NOT NULL AUTO_INCREMENT COMMENT '文章分类id',
+  `article_id` int(10) NOT NULL COMMENT '文章id',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>
