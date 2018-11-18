@@ -2,7 +2,7 @@ package com.xiaohoo.myblog.pojo;
 
 import javax.persistence.*;
 
-public class Categorie {
+public class Tag {
     /**
      * 文章分类id
      */
@@ -11,9 +11,9 @@ public class Categorie {
     private Integer id;
 
     /**
-     * 分类
+     * 标签
      */
-    private String cat;
+    private String tag;
 
     /**
      * 获取文章分类id
@@ -34,20 +34,20 @@ public class Categorie {
     }
 
     /**
-     * 获取分类
+     * 获取标签
      *
-     * @return cat - 分类
+     * @return tag - 标签
      */
-    public String getCat() {
-        return cat;
+    public String getTag() {
+        return tag;
     }
 
     /**
-     * 设置分类
+     * 设置标签
      *
-     * @param cat 分类
+     * @param tag 标签
      */
-    public void setCat(String cat) {
-        this.cat = cat;
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 }

@@ -16,16 +16,15 @@ public class Article {
     private String title;
 
     /**
+     * 描述
+     */
+    private String descr;
+
+    /**
      * 文章用户id
      */
     @Column(name = "user_id")
     private Integer userId;
-
-    /**
-     * 文章分类id
-     */
-    @Column(name = "cat_id")
-    private Integer catId;
 
     /**
      * 文章内容
@@ -69,6 +68,24 @@ public class Article {
     }
 
     /**
+     * 获取描述
+     *
+     * @return descr - 描述
+     */
+    public String getDescr() {
+        return descr;
+    }
+
+    /**
+     * 设置描述
+     *
+     * @param descr 描述
+     */
+    public void setDescr(String descr) {
+        this.descr = descr;
+    }
+
+    /**
      * 获取文章用户id
      *
      * @return user_id - 文章用户id
@@ -84,24 +101,6 @@ public class Article {
      */
     public void setUserId(Integer userId) {
         this.userId = userId;
-    }
-
-    /**
-     * 获取文章分类id
-     *
-     * @return cat_id - 文章分类id
-     */
-    public Integer getCatId() {
-        return catId;
-    }
-
-    /**
-     * 设置文章分类id
-     *
-     * @param catId 文章分类id
-     */
-    public void setCatId(Integer catId) {
-        this.catId = catId;
     }
 
     /**
